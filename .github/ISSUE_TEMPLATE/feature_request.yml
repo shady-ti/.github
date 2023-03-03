@@ -1,0 +1,38 @@
+name: I would like a new feature . . .
+
+description: Share your great ideas with us, we'll try to add implement it.
+
+title: A short descriptive explanation for your feature idea (or we won't handle it)
+
+labels:
+  - feature request
+
+body:
+  - type: checkboxes
+    attributes:
+      label: Are you willing to work on the implementation?
+      options:
+        - label: yes
+          required: false
+
+        - label: no
+          required: false
+
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Could you describe your idea for us? (in as many or as few ideas words as you want)
+      placeholder: Enable background downloading of songs.
+
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Why do you want this? How would it help? Who would it help? Give us a reason to prioritize your idea.
+      placeholder: OCD infected people like me who get annoyed by the app icon in the taskbar.
+
+  - type: textarea
+    attributes:
+      label: Any ideas about how to implement your idea?
+      placeholder: Implement the downloader as a separate service/task so it can run independently of the UI. (Sorry, don't got more details.)
