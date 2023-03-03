@@ -1,0 +1,72 @@
+name: I found a Bug . . .
+
+description: Report a bug, so we can fix it.
+
+title: Describe your issue (or we won't handle it)
+
+labels:
+  - bug
+
+body:
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Describe your issue, what did you expect? what actually happened?
+      placeholder: I expected pressing the download button to download my songs, not for it to rick-roll me.
+  
+  - type: dropdown
+    validations:
+      required: true
+    attributes:
+      label: What Operating System do you run?
+      multiple: false
+      options:
+        - Windows
+        - Linux
+        - MacOS
+        - Web
+        - Android
+        - iOS
+        - Other (Please specify in notes)
+  
+  - type: dropdown
+    validations:
+      required: true
+    attributes:
+      label: Where did you download this app/package from?
+      multiple: false
+      options:
+        - PiP / PyPi
+        - Pub
+        - Windows Installer (.msi)
+        - .Zip
+        - Other (Please specify in notes)
+  
+  - type: dropdown
+    attributes:
+      label: What language version do you run? (if your using the package)
+      multiple: false
+      options:
+        - Python 3.7
+        - Python 3.8
+        - Python 3.9
+        - Python 3.10
+        - Python 3.11
+        - Flutter 3.0.x (Please specify in notes)
+        - Flutter 3.3.x (Please specify in notes)
+        - Flutter 3.7.x (Please specify in notes)
+  
+  - type: input
+    validations:
+      required: true
+    attributes:
+      label: What version of the app/package do you run?
+  
+  - type: textarea
+    attributes:
+      label: How to cause this specific error? (Please give specific steps)
+
+  - type: textarea
+    attributes:
+      label: Any extra notes?
