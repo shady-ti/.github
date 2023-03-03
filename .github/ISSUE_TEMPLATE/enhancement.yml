@@ -1,0 +1,37 @@
+name: I think you can enhance . . .
+
+description: Enhancement ideas, so we can improve.
+
+title: You could enhance [this] (please specify what)
+
+labels:
+  - bug
+
+body:
+  - type: checkboxes
+    attributes:
+      label: Are you willing to work on the implementation?
+      options:
+        - label: "yes"
+          required: false
+
+        - label: "no"
+          required: false
+  
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: What can we enhance? How can we do it?
+      placeholder: You could improve your downloading system using multi-threading.
+      
+  - type: textarea
+    attributes:
+      label: How would it help? Who would it help? Give us a reason to prioritize your enhancement.
+      placeholder: It'd help everyone, faster downloads are better.
+  
+  - type: textarea
+    attributes:
+      label: Any details you'd like to add?
+      placeholder: Add a command line option to specify the number of download threads.
+  
