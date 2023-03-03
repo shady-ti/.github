@@ -66,7 +66,12 @@ body:
   - type: textarea
     attributes:
       label: How to cause this specific error? (Please give specific steps)
+      placeholder: |
+        1. Open the App. Enter none of the sub-menu's or anything else.
+        2. Hit the download button.
+        3. Get Rick-rolled.
 
   - type: textarea
     attributes:
       label: Any extra notes?
+      placeholder: Don't you dare tell me this is an easter egg.
