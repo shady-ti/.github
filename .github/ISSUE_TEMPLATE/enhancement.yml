@@ -8,15 +8,15 @@ labels:
   - bug
 
 body:
-  - type: checkboxes
+  - type: dropdown
+    validations:
+      required: true
     attributes:
       label: Are you willing to work on the implementation?
+      multiple: false
       options:
-        - label: "yes"
-          required: false
-
-        - label: "no"
-          required: false
+        - "Yes"
+        - "No"
   
   - type: textarea
     validations:
