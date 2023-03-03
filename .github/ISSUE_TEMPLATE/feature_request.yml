@@ -26,8 +26,6 @@ body:
       placeholder: Enable background downloading of songs.
 
   - type: textarea
-    validations:
-      required: true
     attributes:
       label: Why do you want this? How would it help? Who would it help? Give us a reason to prioritize your idea.
       placeholder: OCD infected people like me who get annoyed by the app icon in the taskbar.
